@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
-const { registerValidator } = require ('../middlewares/validator');
+const { registerValidator, loginValidator } = require('../middlewares/validator');
 const { validationResult, body } = require('express-validator');
 const models = require('../models');
 
@@ -36,6 +36,22 @@ router.post('/register', registerValidator, body('email').custom(value => {
   })
 });
 
-
+router.get('/login', loginValidator, function(req, res, next) {
+  return models.User.findOne({
+    where: {
+      email: req.body.email
+    }
+  }).then((user) => {
+    if (!user)
+      return res.status(404).json({msg: "This email doesn\'t belong to an existing account"});
+    else
+      bcrypt.compare(req.body.password, user.password, (err, isMatch)  => {
+        if (!isMatch)
+          return res.status(403).json({msg: "Invalid password"});
+        else
+          return res.status(200).json({msg: "Login successful"});
+      })
+  }).catch((err) => next(err));
+});
 
 module.exports = router;

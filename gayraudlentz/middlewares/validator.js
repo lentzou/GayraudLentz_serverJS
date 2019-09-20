@@ -8,3 +8,8 @@ exports.registerValidator = [
   check('firstName').isLength({min: 2, max: 30}),
   check('lastName').isLength({min: 2, max: 30}),
 ];
+
+exports.loginValidator = [
+  check('email').isEmail(),
+  check('password')
+];
