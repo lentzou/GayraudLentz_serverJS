@@ -2,21 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15a03e78-60b2-4b1d-8f65-8834f09a155b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gayraudlentz/middlewares/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/middlewares/validator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gayraudlentz/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gayraudlentz/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/config/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gayraudlentz/config/sequelize.js" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/config/sequelize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gayraudlentz/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gayraudlentz/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gayraudlentz/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gayraudlentz/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gayraudlentz/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gayraudlentz/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gayraudlentz/seeders/20190920092053-demo-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/seeders/20190920092053-demo-user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileColors">
-    <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
-    <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
-    <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
-    <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,14 +31,19 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/gayraudlentz/node_modules/eslint-config-airbnb-standard/node_modules/eslint" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -57,7 +67,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568901021024</updated>
-      <workItem from="1568901023552" duration="9734000" />
+      <workItem from="1568901023552" duration="10329000" />
+      <workItem from="1569771736026" duration="95000" />
+      <workItem from="1569771957047" duration="79000" />
+      <workItem from="1569772121125" duration="1206000" />
+      <workItem from="1569774172125" duration="1756000" />
+      <workItem from="1569827658313" duration="466000" />
+      <workItem from="1570285981393" duration="2479000" />
     </task>
     <servers />
   </component>
@@ -69,7 +85,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
