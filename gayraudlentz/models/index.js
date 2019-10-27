@@ -30,32 +30,6 @@ Object.keys(db).forEach((modelName) => {
   }
 });
 
-const
-    io = require("socket.io"),
-    server = io.listen(8000);
-
-server.on("connection", function(socket) {  
-  console.info(`Client connected [id=${socket.id}]`);
-
-socket.on('pseudo', function(pseudo) {  
-  socket.pseudo = pseudo;
-  console.info('Pseudo : ' + pseudo);
-});  
-
-  socket.emit('newConnection', 'Vous êtes bien connecté !');
-  socket.broadcast.emit('newConnection', 'Un autre client vient de se connecter !');
-
-	socket.on('generalMessage', function (message) {
-    console.info('Un client me parle ! Il me dit : ' + message);
-    socket.broadcast.emit('generalMessage', message);
-  });	
-    
-  socket.on("disconnect", () => {      
-      console.info(`Client gone [id=${socket.id}]`);
-      
-  });
-});
-
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 

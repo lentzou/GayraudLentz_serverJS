@@ -36,22 +36,37 @@ router.post('/register', registerValidator, body('email').custom(value => models
   });
 });
 
-router.post('/login', loginValidator, (req, res, next) => models.User.findOne({
-  where: {
-    email: req.body.email
-  }
-}).then((user) => {
-  if (!user) return res.status(404).json({ msg: "This email doesn't belong to an existing account" });
-  return bcrypt.compare(req.body.password, user.password, (err, isMatch) => {
-    if (!isMatch) return res.status(403).json({ msg: 'Invalid password' });
-    if (err) return res.status(500).json({ msg: 'Server error' });
-    return jwt.sign({
-      email: req.body.email
-    }, 'secret', { expiresIn: '48h' }, (signErr, token) => {
-      if (signErr) return res.status(500).json({ msg: 'Server error' });
-      return res.status(200).json({ msg: 'Login successful', token });
+// eslint-disable-next-line consistent-return
+router.post('/login', loginValidator, (req, res, next) => {
+  if (req.body.email) {
+    models.User.findOne({
+      where: {
+        email: req.body.email
+      }
+    }).then((user) => {
+      if (!user) return res.status(404).json({ msg: "This email doesn't belong to an existing account" });
+      return bcrypt.compare(req.body.password, user.password, (err, isMatch) => {
+        if (!isMatch) return res.status(403).json({ msg: 'Invalid password' });
+        if (err) return res.status(500).json({ msg: 'Server error' });
+        return jwt.sign({
+          email: req.body.email
+        }, 'secret', { expiresIn: '48h' }, (signErr, token) => {
+          if (signErr) return res.status(500).json({ msg: 'Server error' });
+          return res.status(200).json({ msg: 'Login successful', token });
+        });
+      });
+    }).catch(err => next(err));
+  } else {
+    return res.status('422').json({
+      errors: [
+        {
+          msg: 'Missing email parameter',
+          param: 'email',
+          location: 'body'
+        }
+      ]
     });
-  });
-}).catch(err => next(err)));
+  }
+});
 
 module.exports = router;
