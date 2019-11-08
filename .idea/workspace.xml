@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15a03e78-60b2-4b1d-8f65-8834f09a155b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gayraudlentz/middlewares/checkToken.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gayraudlentz/routes/socket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gayraudlentz/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gayraudlentz/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/config/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gayraudlentz/middlewares/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/middlewares/validator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gayraudlentz/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gayraudlentz/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gayraudlentz/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gayraudlentz/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/routes/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gayraudlentz/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/gayraudlentz/routes/users.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +21,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../barclap/mobile" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -73,7 +63,7 @@
       <workItem from="1570285981393" duration="3739000" />
       <workItem from="1570976469910" duration="2398000" />
       <workItem from="1572169555737" duration="5684000" />
-      <workItem from="1572182635811" duration="5808000" />
+      <workItem from="1572182635811" duration="5823000" />
     </task>
     <servers />
   </component>

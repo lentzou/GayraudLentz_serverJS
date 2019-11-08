@@ -13,8 +13,19 @@ server.on('connection', (socket) => {
   socket.broadcast.emit('newConnection', 'Un autre client vient de se connecter !');
 
   socket.on('generalMessage', ({ message, id, username }) => {
-    console.info(`${username} me parle ! Il me dit : ${message}`);
+    console.log(message)
     socket.broadcast.emit('generalMessage', { message, username });
+  });
+
+  socket.on('roomMessage', ({ message, id, username, room }) => {
+    console.log(room)
+    console.log("message " + message)
+    server.in(room).emit('roomMessage', { message, username, room });
+  });
+
+  socket.on('room', function (room) {
+    console.log("CONNECTED TO ROOM" + room)
+    socket.join(room);
   });
 
   socket.on('disconnect', () => {
