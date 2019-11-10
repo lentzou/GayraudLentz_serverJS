@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "presets": [
     "@babel/preset-env"
   ],
   "plugins": ["@babel/plugin-transform-modules-commonjs"]
 }
+=======
+    "presets": ["es2015"]
+}
+>>>>>>> e66caf45ad7bf8355665fc354e37194cbdbbd847
